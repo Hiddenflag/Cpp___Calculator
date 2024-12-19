@@ -1,6 +1,3 @@
-// Day2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 using namespace std;
 enum operators {
@@ -10,8 +7,6 @@ int main()
 {
 	operators op = Add;
 	cout << "Hello dear c++ user, This is your own calculator!.\n Please choose one the following commands and JUST enter their refrenced number.\n";
-	/*cout << 35e5;
-	cout << 35E5;*/
 	while (op != Exit) {
 		/*cout << "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n";*/
 		cout << "\n1.Add 2.Substact 3.Divide 4.Multiply 0.Exit\n";
@@ -28,19 +23,6 @@ int main()
 
 				if (a == 0 || a == 1 || a == 2 || a == 3 || a == 4)
 				{
-
-					/*if (cin.fail())
-					{
-						cin.clear();
-
-
-						cout << "Bad input.";
-							continue;
-					}*/
-					//else
-					//{
-
-
 					op = (operators)a;
 					if (op == Exit)
 					{
@@ -53,13 +35,13 @@ int main()
 						cout << "Add operator : Enter your two numbers.\n";
 						cin >> x;
 						cin >> y;
-						cout << "=" << x + y << endl;
+						cout << "= " << x + y << endl;
 						break;
 					case Substract:
 						cout << "Substract operator : Enter your two numbers.\n";
 						cin >> x;
 						cin >> y;
-						cout << "=" << x - y << " & " << "=" << y - x << endl;
+						cout << "= " << x - y << " & " << "= " << y - x << endl;
 						break;
 					case Divide:
 						cout << "Divide operator : Enter your two numbers.\n";
@@ -70,14 +52,14 @@ int main()
 							continue;
 						}
 						else {
-							cout << "=" << x / y << " & " << "=" << y / x << endl;
+							cout << "= " << x / y << " & " << "= " << y / x << endl;
 							break;
 						}
 					case Multiply:
 						cout << "Multiply operator : Enter your two numbers.\n";
 						cin >> x;
 						cin >> y;
-						cout << "=" << x * y;
+						cout << "= " << x * y;
 						break;
 					case Exit:
 						cout << "Goodibye\n";
@@ -108,6 +90,3 @@ int main()
 	}
 	return 0;
 }
-
-
-
